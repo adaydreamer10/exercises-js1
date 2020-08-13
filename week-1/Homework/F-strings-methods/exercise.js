@@ -1,3 +1,4 @@
 // Start by creating a variable `message`
-
-console.log(message);
+message = "Hello Migracode"
+messageLength = message.length;
+console.log(message,messageLength);
