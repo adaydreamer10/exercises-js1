@@ -1,4 +1,4 @@
-function findName(names) {
+/* function findName(names) {
     const myNameIsIncluded = names.find(
         (elem) => { return "Alexandra" === elem }
     );
@@ -9,4 +9,12 @@ function findName(names) {
     }
 }
 const namesArr = ["David", "Ana", "Alexandra"];
-console.log(findName(namesArr));
+console.log(findName(namesArr)); */
+
+let names = ['Amara', 'Thony', 'Aleksey', 'Ali', 'Joana', 'Ramin', 'Charlotte']
+
+function isMyNameIncuded (name) {
+    return name.includes('Ali')
+}
+
+console.log(isMyNameIncuded(names))

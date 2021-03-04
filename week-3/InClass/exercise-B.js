@@ -1,23 +1,14 @@
-let classMates = ["Bipasha", "Thony", "Aleksey", "Diana"];
+let classMates = ["Amara", "Thony", "Aleksey", "Diana"];
 let workMates = ["Joana", "Ramin", "Charlotte"];
 let mates = classMates.concat(workMates)
-console.log(mates);
-
-let matesInOrder = mates.sort();
-console.log(matesInOrder);
+ mates.sort();
 
 function isAMate(name, classArray){
-    
-    let result = classArray.includes(name);
-
-    if (result === true){
-        return `${name} is a class mate`
-    }
-
-    else {
-    return `${name} is not a class mate`
-    }
+   if (classArray.includes(name)) {
+    return `${name} is at the class with ${classArray.join(', ')}`;
+   } else {
+    return `${name} is not at the class with ${classArray.join(', ')}`;
+   }
 }
 
-     let mateCheck = isAMate("Bipasha", mates);
-     console.log(mateCheck);
+console.log(isAMate("Amara", mates));
